@@ -23,11 +23,11 @@ export const Card =(props)=>{
     return(
         <div style={CardStyle}>
            <p><b>Ideas</b></p>
-           <p style={InnerCardStyle}> lorem ipsum</p>
+           <p style={InnerCardStyle}> {props.date}</p>
            <div style={InnerCardStyle}>
-               <p>title</p>
-               Picture
-               <p>lorem ipsum</p>
+               <p style={{marginTop:'5px'}}>{props.weekday}</p>
+               <img src={props.source} alt='random' width='140px' height='80px' style={{marginLeft:'48px'}}></img>
+               <p>{props.celebrations}</p>
            </div>
            <p style={InnerCardStyle}> footer information</p>
            <p>Add card...</p>

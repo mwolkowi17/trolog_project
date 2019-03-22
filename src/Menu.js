@@ -23,9 +23,7 @@ export class Menu extends React.Component{
         fetch("https://randomuser.me/api/?format=json&results=5")
         .then(res=>res.json())
         .then(data=>this.setState({contacts:data.results}))
-        fetch("https://randomuser.me/api/?format=json&results=5")
-        .then(res=>res.json())
-        .then(info=>console.log(info))
+       
 
     }
     render(){
